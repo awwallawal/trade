@@ -1,0 +1,321 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #850504;
+    --font-color: #141622;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(./font/Poppins-Black.ttf);
+    src: url(./font/Poppins-Bold.ttf);
+    src: url(./font/Poppins-ExtraBold.ttf);
+    src: url(./font/Poppins-ExtraLight.ttf);
+    src: url(./font/Poppins-Light.ttf);
+    src: url(./font/Poppins-Medium.ttf);
+    src: url(./font/Poppins-Regular.ttf);
+    src: url(./font/Poppins-SemiBold.ttf);
+    src: url(./font/Poppins-Thin.ttf);
+}
+
+@font-face {
+    font-family: "Mona";
+    src: url(./font/mona_sans/Mona-Sans.ttf);
+    src: url(./font/mona_sans/MonaSans-Regular.ttf);
+}
+
+/* Body styles */
+body {
+    font-family: "Mona", sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header and Navigation */
+header {
+    /* background-color: #ceb3b3; */
+    padding: 5px 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: blur(2rem);
+    align-items: center;
+    z-index: 111;
+    border: none;
+    outline: none;
+}
+
+header img {
+    width: 200px;
+    height: 60px;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    font-size: 13px;
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    font-family: "Mona";
+    color: #8b1414;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.1rem;
+    border-bottom-width: 3px;
+    padding-bottom: 2px;
+    cursor: pointer;
+    text-shadow: 0 0 2px #fff;
+}
+
+header nav ul li a:hover {
+    color: #850504;
+    border-bottom: 1px solid var(--font-color);
+    border-bottom-width: 4px;
+    padding-bottom: 3px;
+}
+
+/* Hero Section */
+.new_hero {
+    background-image:  url('./images/Ibadan_skyline_roof_top.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    /* text-shadow: 0 0 2px black; */
+    padding: 0px 20px;
+    height: 80rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.new_hero h1 {
+    font-family: "Mona";
+    color: #f4f4f4;
+    margin-top: 12rem;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: bolder;
+    background: rgba(200, 87, 87, 0.7);
+    padding: 2rem;
+    border-radius: 25px;
+    text-shadow: 0 0 4px #000;
+}
+
+.new_hero p {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+    text-shadow: 0 0 2px #fff;
+    backdrop-filter: blur(0.5rem);
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+.new_hero .btn_cta {
+    background-color: var(--main-color);
+    padding: 15px 30px;
+    color: #fff;
+    text-decoration: none;
+    font-family: "Mona", sans-serif;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+
+.new_hero .btn_cta:hover {
+    background-color: var(--font-color);
+}
+
+.div_img_vid {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 45rem;
+    width: 100%;
+    /* border: 10px solid green; */
+}
+
+.img_vid_container {
+    height: 100%;
+    width: 100%;
+    border: 2px solid #f4f4f4;
+    border-radius: 20px;
+    background: #d0b3b3;
+    box-shadow: 5px 5px 15px 5px #d0b3b3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.div_iframe_container {
+     width: 95%;
+     height: 92%;
+     border-radius: 20px;
+     overflow: hidden;
+     border-bottom-left-radius: 0;
+     border-bottom-right-radius: 0;
+}
+
+iframe {
+    width: 100%;
+    height: 100%; 
+}
+
+
+
+
+
+/* 
+.hero { 
+    background-image:  url('./images/Ibadan_skyline_roof_top.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #e5e5e5;
+    text-shadow: 0 0 2px black;
+    padding: 0px 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 100px 20px 10px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 0 0 4px #850504;
+}
+
+.hero p {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    text-shadow: 0 0 2px #fff;
+    backdrop-filter: blur(1rem);
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+.hero .trade_name {
+    background: var(--main-color);
+    padding: 1px 10px;
+    border-radius: 9px;
+    display: inline-block;
+}
+
+
+.hero .cta-btn {
+    background-color: var(--main-color);
+    padding: 15px 30px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.0rem;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.hero .cta-btn button {
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+.hero .cta-btn:hover {
+    background-color: var(--font-color);
+}
+
+Image_Video
+
+.sect_img_vid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./images/com_buiding.jpg);
+    height: 40rem;
+    padding-bottom: 10rem;
+    background: #850504;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img_vid {
+    height: 100vh;
+    width: 75%;
+    border: 2px solid #f4f4f4;
+    border-radius: 20px;
+    background: #d0b3b3;
+    margin-top: -3rem;
+    box-shadow: 5px 5px 15px 5px #d0b3b3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.img_vid .iframe_container {
+    border: 1px solid red;
+    width: 95%;
+    height: 92%;
+    border: 2px solid #f4f4f4;
+    border-radius: 20px;
+    overflow: hidden;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    
+}
+*/
+
+/* Export Opportunities Section */
+
+
+.export-opportunities, .success-stories, .export-info, .registration-form {
+    padding: 40px 20px;
+    /* margin: 20px 0; */
+    /* background-color: #fff; */
+    border-radius: 8px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
