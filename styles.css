@@ -39,7 +39,7 @@ body {
 /* Header and Navigation */
 header {
     /* background-color: #ceb3b3; */
-    padding: 5px 20px;
+    padding: 4px 18px;
     text-align: center;
     position: fixed;
     width: 100%;
@@ -53,8 +53,8 @@ header {
 }
 
 header img {
-    width: 200px;
-    height: 60px;
+    width: 160px;
+    height: 48px;
 }
 
 header nav ul {
@@ -63,9 +63,9 @@ header nav ul {
 }
 
 header nav ul li {
-    font-size: 13px;
+    font-size: 10px;
     display: inline;
-    margin-right: 20px;
+    margin-right: 16px;
 }
 
 header nav ul li a {
@@ -73,7 +73,7 @@ header nav ul li a {
     color: #8b1414;
     text-decoration: none;
     font-weight: bolder;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     border-bottom-width: 3px;
     padding-bottom: 2px;
     cursor: pointer;
@@ -96,35 +96,35 @@ header nav ul li a:hover {
     /* background-attachment: fixed; */
     /* text-shadow: 0 0 2px black; */
     padding: 0px 20px;
-    height: 80rem;
+    height: 70rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 24px;
 }
 
 .new_hero h1 {
     font-family: "Mona";
     color: #f4f4f4;
-    margin-top: 12rem;
-    font-size: 2.5rem;
+    margin-top: 10rem;
+    font-size: 2rem;
     text-align: center;
     font-weight: bolder;
     background: rgba(200, 87, 87, 0.7);
-    padding: 2rem;
+    padding: 1.6rem;
     border-radius: 25px;
     text-shadow: 0 0 4px #000;
 }
 
 .new_hero p {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     font-weight: bold;
     text-align: center;
     color: #000;
     text-shadow: 0 0 2px #fff;
     backdrop-filter: blur(0.5rem);
-    padding: 0.5rem;
+    padding: 0.4rem;
     border: none;
     outline: none;
     border-radius: 10px;
@@ -132,11 +132,11 @@ header nav ul li a:hover {
 
 .new_hero .btn_cta {
     background-color: var(--main-color);
-    padding: 15px 30px;
+    padding: 12px 24px;
     color: #fff;
     text-decoration: none;
     font-family: "Mona", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     border-radius: 10px;
     font-weight: bold;
     border: none;
