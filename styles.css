@@ -24,6 +24,11 @@
 }
 
 @font-face {
+    font-family: "Inter";
+    src: url(./font/inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
     font-family: "Mona";
     src: url(./font/mona_sans/Mona-Sans.ttf);
     src: url(./font/mona_sans/MonaSans-Regular.ttf);
@@ -31,7 +36,7 @@
 
 /* Body styles */
 body {
-    font-family: "Mona", sans-serif;
+    font-family: "Inter", sans-serif;
     background-color: #f4f4f4;
     color: #333;
 }
@@ -39,10 +44,11 @@ body {
 /* Header and Navigation */
 header {
     /* background-color: #ceb3b3; */
-    padding: 4px 18px;
+    padding: 9px 18px;
     text-align: center;
     position: fixed;
-    width: 100%;
+    width: 90%;
+    margin: 1rem 4.5rem;
     display: flex;
     justify-content: space-between;
     backdrop-filter: blur(2rem);
@@ -50,6 +56,7 @@ header {
     z-index: 111;
     border: none;
     outline: none;
+    border-radius: 6rem;
 }
 
 header img {
@@ -59,32 +66,119 @@ header img {
 
 header nav ul {
     list-style-type: none;
+    display: flex;
     padding: 0;
 }
 
 header nav ul li {
     font-size: 10px;
     display: inline;
-    margin-right: 16px;
+    margin-right: 30px;
+    position: relative;
 }
 
 header nav ul li a {
-    font-family: "Mona";
-    color: #8b1414;
+    font-family: "Inter";
+    color: #f4f4f4;
     text-decoration: none;
     font-weight: bolder;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
+    font-weight: 300;
     border-bottom-width: 3px;
-    padding-bottom: 2px;
+    /* padding-bottom: 2px; */
     cursor: pointer;
-    text-shadow: 0 0 2px #fff;
+    text-shadow: 0 0 4px #333;
+    display: block;
 }
 
 header nav ul li a:hover {
     color: #850504;
-    border-bottom: 1px solid var(--font-color);
-    border-bottom-width: 4px;
     padding-bottom: 3px;
+}
+
+header .dropdown {
+    display: none;
+    position: absolute;
+    padding-top: 60px;
+    top: 100%;
+    left: 0px;
+    background: #34495e;
+    list-style: none;
+    display: none;
+    /* padding: 0; */
+    border-radius: 4px;
+    z-index: 1000;
+    width: 220px;
+    
+}
+
+header nav ul li:hover .dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+header .dropdown li {
+    width: 100%;
+    list-style: none;
+    /* border: 1px solid red; */
+}
+
+header .dropdown li a {
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 200;
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #f4f4f4;
+}
+  
+header .dropdown a:hover {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+header .contact_us {
+    padding: 9px 18px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    color: #f4f4f4;
+    font-family: "Inter", sans-serif;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+/* Second level dropdown (dropdown-two) */
+header .dropdown-two {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: #2f3b45;
+    width: 200px;
+    list-style: none;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+header .dropdown li:hover .dropdown-two {
+    display: block;
+}
+
+header .dropdown-two li a {
+    font-size: 0.9rem;
+    font-weight: 200;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+header .dropdown-two a:hover {
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 /* Hero Section */
@@ -105,10 +199,12 @@ header nav ul li a:hover {
 }
 
 .new_hero h1 {
-    font-family: "Mona";
+    font-family: "Inter";
+    line-height: 1.2;
+    font-weight: 500;
     color: #f4f4f4;
     margin-top: 10rem;
-    font-size: 2rem;
+    font-size: 2.6rem;
     text-align: center;
     font-weight: bolder;
     background: rgba(200, 87, 87, 0.7);
