@@ -1,6 +1,8 @@
-const btnCta = document.querySelector("#btn_cta");
-console.log(btnCta);
-btnCta.addEventListener("click", ()=> {
-    // window.location.href = https://www.nairaland.com/
-    window.open("https://www.nairaland.com/", "_blank")
-})
+const menuBtn = document.querySelector("#hambuger");
+const navLinks = document.querySelector('header nav ul');
+const dropdowns = document.querySelectorAll('.dropdown');
+// console.log(menuBtn);
+menuBtn.addEventListener('click', (e)=>{
+    e.preventDefault();
+    navLinks.classList.toggle('active');
+});
